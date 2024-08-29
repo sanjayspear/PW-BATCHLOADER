@@ -29,7 +29,7 @@ test('Dismiss: Confirmation alert', async ({page}) => {
     await simpleJSAlert.click();
 });
 
-test.only('Accept: Prompt alert', async ({page}) => {
+test('Accept: Prompt alert', async ({page}) => {
     await page.goto("https://testpages.herokuapp.com/styled/alerts/alert-test.html");
     const simpleJSAlert = page.locator("input#promptexample");
     page.on("dialog", async (alert) => {
@@ -42,4 +42,10 @@ test.only('Accept: Prompt alert', async ({page}) => {
             expect(page.locator("p#promptexplanation")).toContainText("Sanjay");
     });
     await simpleJSAlert.click();
+});
+
+test.only('Model Popup', async ({page}) => {
+    await page.goto("https://getbootstrap.com/docs/4.0/components/modal/");
+    await page.locator("text=Launch demo modal").click();
+    await page.waitForTimeout(2000);
 });

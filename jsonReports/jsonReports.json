@@ -67,7 +67,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Accept: Prompt alert",
+          "title": "Model Popup",
           "ok": false,
           "tags": [],
           "tests": [
@@ -81,55 +81,61 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 4108,
+                  "duration": 7359,
                   "error": {
-                    "message": "Error: page.waitForTimeout: Test ended.",
-                    "stack": "Error: page.waitForTimeout: Test ended.\n    at Page.<anonymous> (C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts:40:24)",
+                    "message": "Error: locator.click: Error: strict mode violation: locator('text=Launch demo modal') resolved to 8 elements:\n    1) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalLive\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).first()\n    2) <code data-lang=\"html\" class=\"language-html\">…</code> aka getByText('<!-- Button trigger modal --> <button type=\"button\" class=\"btn btn-primary\"').first()\n    3) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalLong\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).nth(1)\n    4) <code data-lang=\"html\" class=\"language-html\">…</code> aka getByText('<!-- Button trigger modal --> <button type=\"button\" class=\"btn btn-primary\"').nth(1)\n    5) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalCenter\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).nth(2)\n    6) <code data-lang=\"html\" class=\"language-html\">…</code> aka getByText('<!-- Button trigger modal --> <button type=\"button\" class=\"btn btn-primary\"').nth(2)\n    7) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalPopovers\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).nth(3)\n    8) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#gridSystemModal\">↵  Launch demo modal↵</button> aka getByRole('button', { name: 'Launch demo modal' }).nth(4)\n\nCall log:\n  \u001b[2m- waiting for locator('text=Launch demo modal')\u001b[22m\n",
+                    "stack": "Error: locator.click: Error: strict mode violation: locator('text=Launch demo modal') resolved to 8 elements:\n    1) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalLive\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).first()\n    2) <code data-lang=\"html\" class=\"language-html\">…</code> aka getByText('<!-- Button trigger modal --> <button type=\"button\" class=\"btn btn-primary\"').first()\n    3) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalLong\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).nth(1)\n    4) <code data-lang=\"html\" class=\"language-html\">…</code> aka getByText('<!-- Button trigger modal --> <button type=\"button\" class=\"btn btn-primary\"').nth(1)\n    5) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalCenter\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).nth(2)\n    6) <code data-lang=\"html\" class=\"language-html\">…</code> aka getByText('<!-- Button trigger modal --> <button type=\"button\" class=\"btn btn-primary\"').nth(2)\n    7) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalPopovers\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).nth(3)\n    8) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#gridSystemModal\">↵  Launch demo modal↵</button> aka getByRole('button', { name: 'Launch demo modal' }).nth(4)\n\nCall log:\n  \u001b[2m- waiting for locator('text=Launch demo modal')\u001b[22m\n\n    at C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts:49:50",
                     "location": {
                       "file": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts",
-                      "column": 24,
-                      "line": 40
+                      "column": 50,
+                      "line": 49
                     },
-                    "snippet": "\u001b[0m \u001b[90m 38 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m\"Message on the JS Alert is: \"\u001b[39m\u001b[33m+\u001b[39mtext1)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m             \u001b[36mawait\u001b[39m alert\u001b[33m.\u001b[39maccept(\u001b[32m\"Hello! Sanjay\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m             \u001b[36mconst\u001b[39m text2 \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#promptexplanation\"\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m             \u001b[90m//expect(text2).toBe(\"You clicked OK. 'prompt' returned Hello! Sanjay\");\u001b[39m\n \u001b[90m 43 |\u001b[39m             expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#promptexplanation\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Sanjay\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                    "snippet": "\u001b[0m \u001b[90m 47 |\u001b[39m test\u001b[33m.\u001b[39monly(\u001b[32m'Model Popup'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://getbootstrap.com/docs/4.0/components/modal/\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Launch demo modal\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts",
-                        "column": 24,
-                        "line": 40
+                        "column": 50,
+                        "line": 49
                       },
-                      "message": "Error: page.waitForTimeout: Test ended.\n\n\u001b[0m \u001b[90m 38 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m\"Message on the JS Alert is: \"\u001b[39m\u001b[33m+\u001b[39mtext1)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m             \u001b[36mawait\u001b[39m alert\u001b[33m.\u001b[39maccept(\u001b[32m\"Hello! Sanjay\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m             \u001b[36mconst\u001b[39m text2 \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#promptexplanation\"\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m             \u001b[90m//expect(text2).toBe(\"You clicked OK. 'prompt' returned Hello! Sanjay\");\u001b[39m\n \u001b[90m 43 |\u001b[39m             expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#promptexplanation\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Sanjay\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at Page.<anonymous> (C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts:40:24)\u001b[22m"
+                      "message": "Error: locator.click: Error: strict mode violation: locator('text=Launch demo modal') resolved to 8 elements:\n    1) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalLive\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).first()\n    2) <code data-lang=\"html\" class=\"language-html\">…</code> aka getByText('<!-- Button trigger modal --> <button type=\"button\" class=\"btn btn-primary\"').first()\n    3) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalLong\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).nth(1)\n    4) <code data-lang=\"html\" class=\"language-html\">…</code> aka getByText('<!-- Button trigger modal --> <button type=\"button\" class=\"btn btn-primary\"').nth(1)\n    5) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalCenter\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).nth(2)\n    6) <code data-lang=\"html\" class=\"language-html\">…</code> aka getByText('<!-- Button trigger modal --> <button type=\"button\" class=\"btn btn-primary\"').nth(2)\n    7) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#exampleModalPopovers\">↵    Launch demo modal↵  </button> aka getByRole('button', { name: 'Launch demo modal' }).nth(3)\n    8) <button type=\"button\" data-toggle=\"modal\" class=\"btn btn-primary\" data-target=\"#gridSystemModal\">↵  Launch demo modal↵</button> aka getByRole('button', { name: 'Launch demo modal' }).nth(4)\n\nCall log:\n  \u001b[2m- waiting for locator('text=Launch demo modal')\u001b[22m\n\n\n\u001b[0m \u001b[90m 47 |\u001b[39m test\u001b[33m.\u001b[39monly(\u001b[32m'Model Popup'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 48 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://getbootstrap.com/docs/4.0/components/modal/\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Launch demo modal\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 51 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts:49:50\u001b[22m"
                     }
                   ],
-                  "stdout": [
-                    {
-                      "text": "Message on the JS Alert is: I prompt you\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-08-29T10:44:15.884Z",
+                  "startTime": "2024-08-29T12:48:08.174Z",
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-alerts-Model-Popup\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-alerts-Model-Popup\\video.webm"
+                    },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-alerts-Accept-Prompt-alert\\trace.zip"
+                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-alerts-Model-Popup\\trace.zip"
                     }
                   ],
                   "errorLocation": {
                     "file": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts",
-                    "column": 24,
-                    "line": 40
+                    "column": 50,
+                    "line": 49
                   }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "addb81fc64a6c6200bbb-3b38d57638b9135f738a",
+          "id": "addb81fc64a6c6200bbb-1174eb78e4ad4b96de68",
           "file": "tests/alerts.test.ts",
-          "line": 32,
+          "line": 47,
           "column": 6
         }
       ]
@@ -137,8 +143,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-08-29T10:44:14.997Z",
-    "duration": 6027.437,
+    "startTime": "2024-08-29T12:48:07.211Z",
+    "duration": 9413.405999999999,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,
