@@ -1,0 +1,123 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\playwright.config.ts",
+    "rootDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReports.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
+        "repeatEach": 1,
+        "retries": 3,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/basicInteractions.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.46.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\basicInteractions.test.ts",
+      "file": "tests/basicInteractions.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Test Input Field",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 6662,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Enter Your Name\n"
+                    },
+                    {
+                      "text": "Before entering the data: \n"
+                    },
+                    {
+                      "text": "After entering the data: Sanjay\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-08-28T12:29:56.056Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e8550347d925177e1da7-c9abc135e7914399653a",
+          "file": "tests/basicInteractions.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-08-28T12:29:54.993Z",
+    "duration": 9008.949,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
