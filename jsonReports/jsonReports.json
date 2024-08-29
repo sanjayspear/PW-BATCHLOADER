@@ -41,14 +41,14 @@
       {
         "outputDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
         "repeatEach": 1,
-        "retries": 3,
+        "retries": 0,
         "metadata": {},
         "id": "",
         "name": "",
         "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
-          "tests/basicInteractions.test.ts"
+          "tests/alerts.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,14 +61,14 @@
   },
   "suites": [
     {
-      "title": "tests\\basicInteractions.test.ts",
-      "file": "tests/basicInteractions.test.ts",
+      "title": "tests\\alerts.test.ts",
+      "file": "tests/alerts.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Test Input Field",
-          "ok": true,
+          "title": "Accept: Prompt alert",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -80,44 +80,68 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 6662,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 4108,
+                  "error": {
+                    "message": "Error: page.waitForTimeout: Test ended.",
+                    "stack": "Error: page.waitForTimeout: Test ended.\n    at Page.<anonymous> (C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts:40:24)",
+                    "location": {
+                      "file": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts",
+                      "column": 24,
+                      "line": 40
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 38 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m\"Message on the JS Alert is: \"\u001b[39m\u001b[33m+\u001b[39mtext1)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m             \u001b[36mawait\u001b[39m alert\u001b[33m.\u001b[39maccept(\u001b[32m\"Hello! Sanjay\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m             \u001b[36mconst\u001b[39m text2 \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#promptexplanation\"\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m             \u001b[90m//expect(text2).toBe(\"You clicked OK. 'prompt' returned Hello! Sanjay\");\u001b[39m\n \u001b[90m 43 |\u001b[39m             expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#promptexplanation\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Sanjay\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts",
+                        "column": 24,
+                        "line": 40
+                      },
+                      "message": "Error: page.waitForTimeout: Test ended.\n\n\u001b[0m \u001b[90m 38 |\u001b[39m             console\u001b[33m.\u001b[39mlog(\u001b[32m\"Message on the JS Alert is: \"\u001b[39m\u001b[33m+\u001b[39mtext1)\u001b[33m;\u001b[39m\n \u001b[90m 39 |\u001b[39m             \u001b[36mawait\u001b[39m alert\u001b[33m.\u001b[39maccept(\u001b[32m\"Hello! Sanjay\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 40 |\u001b[39m             \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m2000\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 41 |\u001b[39m             \u001b[36mconst\u001b[39m text2 \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#promptexplanation\"\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m             \u001b[90m//expect(text2).toBe(\"You clicked OK. 'prompt' returned Hello! Sanjay\");\u001b[39m\n \u001b[90m 43 |\u001b[39m             expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m\"p#promptexplanation\"\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m\"Sanjay\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at Page.<anonymous> (C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts:40:24)\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
-                      "text": "Enter Your Name\n"
-                    },
-                    {
-                      "text": "Before entering the data: \n"
-                    },
-                    {
-                      "text": "After entering the data: Sanjay\n"
+                      "text": "Message on the JS Alert is: I prompt you\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-08-28T12:29:56.056Z",
-                  "attachments": []
+                  "startTime": "2024-08-29T10:44:15.884Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-alerts-Accept-Prompt-alert\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\alerts.test.ts",
+                    "column": 24,
+                    "line": 40
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "e8550347d925177e1da7-c9abc135e7914399653a",
-          "file": "tests/basicInteractions.test.ts",
-          "line": 3,
-          "column": 5
+          "id": "addb81fc64a6c6200bbb-3b38d57638b9135f738a",
+          "file": "tests/alerts.test.ts",
+          "line": 32,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-08-28T12:29:54.993Z",
-    "duration": 9008.949,
-    "expected": 1,
+    "startTime": "2024-08-29T10:44:14.997Z",
+    "duration": 6027.437,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

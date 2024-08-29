@@ -3,7 +3,7 @@ import type { PlaywrightTestConfig } from "@playwright/test";
 //import { on } from "events";
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/basicInteractions.test.ts"],
+  testMatch: ["tests/alerts.test.ts"],
   use: {
     headless: false,
     screenshot: "only-on-failure",
@@ -11,7 +11,7 @@ const config: PlaywrightTestConfig = {
     trace: "retain-on-failure"
   },
 
-  retries: 3,
+  retries: 0,
 
   reporter: [["dot"], ["json", { outputFile: "jsonReports/jsonReports.json" }], ["html", { open: "always" }]]
 }
