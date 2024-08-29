@@ -44,8 +44,11 @@ test('Accept: Prompt alert', async ({page}) => {
     await simpleJSAlert.click();
 });
 
-test.only('Model Popup', async ({page}) => {
+test('Model Popup', async ({page}) => {
     await page.goto("https://getbootstrap.com/docs/4.0/components/modal/");
-    await page.locator("text=Launch demo modal").click();
+    await page.click("text=Launch demo modal");
     await page.waitForTimeout(2000);
+    const title = await page.locator("h5#exampleModalLiveLabel").textContent();
+    await page.locator("(//button[text()='Close'])[2]").click();
+    expect(title).toBe("Modal title");
 });
