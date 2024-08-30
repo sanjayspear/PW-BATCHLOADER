@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\playwright.config.ts",
-    "rootDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+    "configFile": "c:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\playwright.config.ts",
+    "rootDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 0
     },
     "preserveOutput": "always",
     "reporter": [
@@ -39,16 +39,16 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
+        "outputDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "",
         "name": "",
-        "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+        "testDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
-          "tests/alerts.test.ts"
+          "tests/dropdown.test.ts"
         ],
         "timeout": 30000
       }
@@ -56,164 +56,15 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.46.1",
-    "workers": 2,
+    "workers": 1,
     "webServer": null
   },
-  "suites": [
-    {
-      "title": "tests\\alerts.test.ts",
-      "file": "tests/alerts.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Accept: Normal alert",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 4360,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Message on the JS Alert is: I am an alert box!\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-08-29T13:05:14.664Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "addb81fc64a6c6200bbb-5060b8e5f3a3b0ce9c25",
-          "file": "tests/alerts.test.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "Dismiss: Confirmation alert",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 4139,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Message on the JS Alert is: I am a confirm alert\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-08-29T13:05:19.395Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "addb81fc64a6c6200bbb-f75b13d5d58c49daa8f3",
-          "file": "tests/alerts.test.ts",
-          "line": 17,
-          "column": 5
-        },
-        {
-          "title": "Accept: Prompt alert",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 3858,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Message on the JS Alert is: I prompt you\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-08-29T13:05:23.542Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "addb81fc64a6c6200bbb-3b38d57638b9135f738a",
-          "file": "tests/alerts.test.ts",
-          "line": 32,
-          "column": 5
-        },
-        {
-          "title": "Model Popup",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 4302,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-08-29T13:05:27.409Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "addb81fc64a6c6200bbb-1174eb78e4ad4b96de68",
-          "file": "tests/alerts.test.ts",
-          "line": 47,
-          "column": 5
-        }
-      ]
-    }
-  ],
+  "suites": [],
   "errors": [],
   "stats": {
-    "startTime": "2024-08-29T13:05:13.655Z",
-    "duration": 18344.592,
-    "expected": 4,
+    "startTime": "2024-08-30T02:55:56.989Z",
+    "duration": 1186.5580000001937,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

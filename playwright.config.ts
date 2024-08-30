@@ -3,7 +3,7 @@ import type { PlaywrightTestConfig } from "@playwright/test";
 //import { on } from "events";
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/alerts.test.ts"],
+  testMatch: ["tests/dropdown.test.ts"],
   use: {
     headless: false,
     screenshot: "only-on-failure",
