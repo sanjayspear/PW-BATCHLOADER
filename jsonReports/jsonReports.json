@@ -81,16 +81,16 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11318,
+                  "duration": 17796,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No. frames: 19\n"
+                      "text": "No. frames: 20\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-02T09:58:27.963Z",
+                  "startTime": "2024-09-02T10:09:59.835Z",
                   "attachments": []
                 }
               ],
@@ -107,8 +107,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-02T09:58:26.913Z",
-    "duration": 13210.956999999999,
+    "startTime": "2024-09-02T10:09:58.743Z",
+    "duration": 20274.64,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
