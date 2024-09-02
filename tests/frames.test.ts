@@ -14,8 +14,12 @@ test('Interact with Frames', async ({page}) => {
     expect(await myFrame?.locator('p.has-text-info').textContent()).toBe("You have entered Sanjay Verma");
 
     //Locate your frame (Approach 2)
-    const frame = page.frameLocator("#firstFr");
-    await frame.locator("//input[@name='fname']").fill("Ankit");
-    await frame.locator("//input[@name='lname']").fill("Sharma");
+    const parentFrame = page.frameLocator("#firstFr");
+    await parentFrame.locator("//input[@name='fname']").fill("Ankit");
+    await parentFrame.locator("//input[@name='lname']").fill("Sharma");
 
+    //nested frame
+    const childFrame = parentFrame.frameLocator("iframe[src='innerFrame']");
+    await childFrame.locator("input[name='email']").fill("sanjayym@dhruvts.com");
+    await page.waitForTimeout(3000);
 });
