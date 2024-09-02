@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "c:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\playwright.config.ts",
-    "rootDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+    "configFile": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\playwright.config.ts",
+    "rootDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 0
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -39,16 +39,16 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
+        "outputDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "",
         "name": "",
-        "testDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+        "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
-          "tests/dropdown.test.ts"
+          "tests/frames.test.ts"
         ],
         "timeout": 30000
       }
@@ -56,15 +56,60 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.46.1",
-    "workers": 1,
+    "workers": 2,
     "webServer": null
   },
-  "suites": [],
+  "suites": [
+    {
+      "title": "tests\\frames.test.ts",
+      "file": "tests/frames.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Interact with Frames",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 11318,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "No. frames: 19\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-09-02T09:58:27.963Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ee77907c2abffffa1fe6-18a1e753722f88a63e34",
+          "file": "tests/frames.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
   "errors": [],
   "stats": {
-    "startTime": "2024-08-30T02:55:56.989Z",
-    "duration": 1186.5580000001937,
-    "expected": 0,
+    "startTime": "2024-09-02T09:58:26.913Z",
+    "duration": 13210.956999999999,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
