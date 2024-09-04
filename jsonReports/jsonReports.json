@@ -48,7 +48,7 @@
         "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
-          "tests/frames.test.ts"
+          "tests/window.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,13 +61,13 @@
   },
   "suites": [
     {
-      "title": "tests\\frames.test.ts",
-      "file": "tests/frames.test.ts",
+      "title": "tests\\window.test.ts",
+      "file": "tests/window.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Interact with Frames",
+          "title": "APPROACH 02: Example 2 Handle multiple pages event / new window event / tab event",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,34 +81,46 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 17555,
+                  "duration": 12647,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No. frames: 22\n"
+                      "text": "Parent Window URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                    },
+                    {
+                      "text": "Number of tabs: [object Object],[object Object]\n"
+                    },
+                    {
+                      "text": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
+                    },
+                    {
+                      "text": "https://www.orangehrm.com/\n"
+                    },
+                    {
+                      "text": "Text Content is: Peace of mind is just a few clicks away!\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-02T10:23:45.427Z",
+                  "startTime": "2024-09-04T02:29:54.769Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "ee77907c2abffffa1fe6-18a1e753722f88a63e34",
-          "file": "tests/frames.test.ts",
-          "line": 3,
-          "column": 5
+          "id": "5af455ae33bb54724c34-416e8e8f90d8b65c9940",
+          "file": "tests/window.test.ts",
+          "line": 94,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-02T10:23:44.389Z",
-    "duration": 19573.656,
+    "startTime": "2024-09-04T02:29:53.681Z",
+    "duration": 14450.23,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

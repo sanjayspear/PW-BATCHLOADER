@@ -3,15 +3,15 @@ import type { PlaywrightTestConfig } from "@playwright/test";
 //import { on } from "events";
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/frames.test.ts"],
+  testMatch: ["tests/window.test.ts"],
   use: {
     headless: false,
     screenshot: "only-on-failure",
     video: "retain-on-failure",
     trace: "retain-on-failure",
-    launchOptions: {
-      slowMo: 1000
-    }
+    // // launchOptions: {
+    //     ignoreHTTPSErrors: true
+    //   // }
   },
 
   retries: 0,
