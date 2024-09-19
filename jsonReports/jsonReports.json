@@ -48,7 +48,7 @@
         "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
-          "tests/window.test.ts"
+          "tests/datepicker.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,13 +61,13 @@
   },
   "suites": [
     {
-      "title": "tests\\window.test.ts",
-      "file": "tests/window.test.ts",
+      "title": "tests\\datepicker.test.ts",
+      "file": "tests/datepicker.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "APPROACH 02: Example 2 Handle multiple pages event / new window event / tab event",
+          "title": "Date Picker Test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,46 +81,30 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 12647,
+                  "duration": 8138,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Parent Window URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
-                    },
-                    {
-                      "text": "Number of tabs: [object Object],[object Object]\n"
-                    },
-                    {
-                      "text": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\n"
-                    },
-                    {
-                      "text": "https://www.orangehrm.com/\n"
-                    },
-                    {
-                      "text": "Text Content is: Peace of mind is just a few clicks away!\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-04T02:29:54.769Z",
+                  "startTime": "2024-09-19T10:13:12.610Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "5af455ae33bb54724c34-416e8e8f90d8b65c9940",
-          "file": "tests/window.test.ts",
-          "line": 94,
-          "column": 6
+          "id": "778a1962c2135f108acd-a900abcdcc1375841214",
+          "file": "tests/datepicker.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-04T02:29:53.681Z",
-    "duration": 14450.23,
+    "startTime": "2024-09-19T10:13:11.544Z",
+    "duration": 10032.280999999999,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
