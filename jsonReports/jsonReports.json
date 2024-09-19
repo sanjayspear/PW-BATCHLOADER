@@ -67,7 +67,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Date Picker Test",
+          "title": "Select date for the previous month : Pick the date based on some conditions",
           "ok": true,
           "tags": [],
           "tests": [
@@ -81,30 +81,30 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8138,
+                  "duration": 19202,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-19T10:13:12.610Z",
+                  "startTime": "2024-09-19T12:06:19.228Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "778a1962c2135f108acd-a900abcdcc1375841214",
+          "id": "778a1962c2135f108acd-0f9c00c17d0ac39515f9",
           "file": "tests/datepicker.test.ts",
-          "line": 3,
-          "column": 5
+          "line": 85,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-19T10:13:11.544Z",
-    "duration": 10032.280999999999,
+    "startTime": "2024-09-19T12:06:18.122Z",
+    "duration": 21449.372,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
