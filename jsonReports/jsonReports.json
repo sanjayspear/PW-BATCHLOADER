@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\playwright.config.ts",
-    "rootDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+    "configFile": "c:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\playwright.config.ts",
+    "rootDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,16 +39,16 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
+        "outputDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "",
         "name": "",
-        "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+        "testDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
-          "tests/datepicker.test.ts"
+          "tests/uploadDownload.test.ts"
         ],
         "timeout": 30000
       }
@@ -56,18 +56,18 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.46.1",
-    "workers": 2,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\datepicker.test.ts",
-      "file": "tests/datepicker.test.ts",
+      "title": "tests\\uploadDownload.test.ts",
+      "file": "tests/uploadDownload.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Select date for the previous month : Pick the date based on some conditions",
+          "title": "Download Files",
           "ok": true,
           "tags": [],
           "tests": [
@@ -79,32 +79,32 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 4,
                   "status": "passed",
-                  "duration": 19202,
+                  "duration": 481,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-19T12:06:19.228Z",
+                  "startTime": "2024-09-23T10:50:53.705Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "778a1962c2135f108acd-0f9c00c17d0ac39515f9",
-          "file": "tests/datepicker.test.ts",
-          "line": 85,
-          "column": 6
+          "id": "bff505410ff9353f2355-609bdf4ed154646e89da",
+          "file": "tests/uploadDownload.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-19T12:06:18.122Z",
-    "duration": 21449.372,
+    "startTime": "2024-09-23T10:50:51.787Z",
+    "duration": 2499.060000000056,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
