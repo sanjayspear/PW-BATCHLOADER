@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "c:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\playwright.config.ts",
-    "rootDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+    "configFile": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\playwright.config.ts",
+    "rootDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,13 +39,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
+        "outputDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "",
         "name": "",
-        "testDir": "c:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
+        "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
           "tests/uploadDownload.test.ts"
@@ -56,7 +56,7 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.46.1",
-    "workers": 1,
+    "workers": 2,
     "webServer": null
   },
   "suites": [
@@ -67,8 +67,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "Download Files",
-          "ok": true,
+          "title": "Upload Multiple Files",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -79,35 +79,59 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 4,
-                  "status": "passed",
-                  "duration": 481,
-                  "errors": [],
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 8404,
+                  "error": {
+                    "message": "Error: ENOENT: no such file or directory, stat 'C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\tests\\uploadFiles\\testfile1.pdf'",
+                    "stack": "Error: ENOENT: no such file or directory, stat 'C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\tests\\uploadFiles\\testfile1.pdf'"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: ENOENT: no such file or directory, stat 'C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\tests\\uploadFiles\\testfile1.pdf'"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-23T10:50:53.705Z",
-                  "attachments": []
+                  "startTime": "2024-09-24T00:54:20.042Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-uploadDownload-Upload-Multiple-Files\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-uploadDownload-Upload-Multiple-Files\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-uploadDownload-Upload-Multiple-Files\\trace.zip"
+                    }
+                  ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "bff505410ff9353f2355-609bdf4ed154646e89da",
+          "id": "bff505410ff9353f2355-37b23a3afc085e306641",
           "file": "tests/uploadDownload.test.ts",
-          "line": 3,
-          "column": 5
+          "line": 43,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-23T10:50:51.787Z",
-    "duration": 2499.060000000056,
-    "expected": 1,
+    "startTime": "2024-09-24T00:54:18.896Z",
+    "duration": 10352.046999999999,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

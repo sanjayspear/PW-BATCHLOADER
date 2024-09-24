@@ -42,8 +42,6 @@ test('Upload Multiple File', async ({ page }) => {
     //Remove all files
     await page.locator('#filesToUpload').setInputFiles([]);
     await expect(page.locator('#fileList li:nth-child(3)')).toHaveText('No Files Selected');
-
-
 });
 
 
