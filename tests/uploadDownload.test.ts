@@ -24,6 +24,7 @@ test('Upload Single File', async ({ page }) => {
     await page.locator('#file-upload').setInputFiles('tests/uploadFiles/testfile1.pdf');
     await page.waitForTimeout(3000);
 });
+
 test('Upload Multiple File', async ({ page }) => {
     await page.goto('https://davidwalsh.name/demo/multiple-file-upload.php');
     await page.waitForSelector('#filesToUpload');
@@ -43,5 +44,9 @@ test('Upload Multiple File', async ({ page }) => {
     await page.locator('#filesToUpload').setInputFiles([]);
     await expect(page.locator('#fileList li:nth-child(3)')).toHaveText('No Files Selected');
 });
+
+
+
+
 
 

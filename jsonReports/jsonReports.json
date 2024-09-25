@@ -48,7 +48,7 @@
         "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
-          "tests/uploadDownload.test.ts"
+          "tests/lambdatest.test.ts"
         ],
         "timeout": 30000
       }
@@ -61,14 +61,14 @@
   },
   "suites": [
     {
-      "title": "tests\\uploadDownload.test.ts",
-      "file": "tests/uploadDownload.test.ts",
+      "title": "tests\\lambdatest.test.ts",
+      "file": "tests/lambdatest.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Upload Multiple Files",
-          "ok": false,
+          "title": "Lambdatest Ecom Site Test",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -80,58 +80,34 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 8404,
-                  "error": {
-                    "message": "Error: ENOENT: no such file or directory, stat 'C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\tests\\uploadFiles\\testfile1.pdf'",
-                    "stack": "Error: ENOENT: no such file or directory, stat 'C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\tests\\uploadFiles\\testfile1.pdf'"
-                  },
-                  "errors": [
-                    {
-                      "message": "Error: ENOENT: no such file or directory, stat 'C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\tests\\tests\\uploadFiles\\testfile1.pdf'"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 13321,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-24T00:54:20.042Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-uploadDownload-Upload-Multiple-Files\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-uploadDownload-Upload-Multiple-Files\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Administrator\\OneDrive - Dhruv Compusoft Consultancy Pvt Ltd\\Documents\\PW-BatchLoader\\test-results\\tests-uploadDownload-Upload-Multiple-Files\\trace.zip"
-                    }
-                  ]
+                  "startTime": "2024-09-25T09:32:23.953Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "bff505410ff9353f2355-37b23a3afc085e306641",
-          "file": "tests/uploadDownload.test.ts",
-          "line": 43,
-          "column": 6
+          "id": "e6a391513a9537495fa3-e6980fac40e8d61841f4",
+          "file": "tests/lambdatest.test.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-24T00:54:18.896Z",
-    "duration": 10352.046999999999,
-    "expected": 0,
+    "startTime": "2024-09-25T09:32:22.899Z",
+    "duration": 15462.798,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
