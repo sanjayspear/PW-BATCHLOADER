@@ -48,64 +48,137 @@
         "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
-          "tests/lambdatest.test.ts"
+          "pomTest/addToCart.test.ts"
         ],
-        "timeout": 30000
+        "timeout": 120000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.46.1",
-    "workers": 2,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "tests\\lambdatest.test.ts",
-      "file": "tests/lambdatest.test.ts",
+      "title": "pomTest\\addToCart.test.ts",
+      "file": "pomTest/addToCart.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Lambdatest Ecom Site Test",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Page Object test demo",
+          "file": "pomTest/addToCart.test.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
+              "title": "Register test_01",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 13321,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-25T09:32:23.953Z",
-                  "attachments": []
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6997,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-26T11:31:46.005Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "de488a82fdc52b0fe88f-9632440d0b3f99d5bab7",
+              "file": "pomTest/addToCart.test.ts",
+              "line": 11,
+              "column": 9
+            },
+            {
+              "title": "Login test_02",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 4620,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-26T11:31:53.458Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de488a82fdc52b0fe88f-db0548aeb0e32f38d06f",
+              "file": "pomTest/addToCart.test.ts",
+              "line": 25,
+              "column": 9
+            },
+            {
+              "title": "Add to Cart test_03",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8216,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-26T11:31:58.089Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de488a82fdc52b0fe88f-d88abf83253e86c2f2b4",
+              "file": "pomTest/addToCart.test.ts",
+              "line": 34,
+              "column": 9
             }
-          ],
-          "id": "e6a391513a9537495fa3-e6980fac40e8d61841f4",
-          "file": "tests/lambdatest.test.ts",
-          "line": 3,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-25T09:32:22.899Z",
-    "duration": 15462.798,
-    "expected": 1,
+    "startTime": "2024-09-26T11:31:44.970Z",
+    "duration": 21967.935,
+    "expected": 3,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

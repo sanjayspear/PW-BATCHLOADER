@@ -5,12 +5,13 @@ export default class HomePage{
 
     }
 
-    async clickOnSpecialHotMenu(){
-        await this.page.click("'Special Hot'");   
-    }
+    // async clickOnSpecialHotMenu(){
+    //     await this.page.click("'Special Hot'");   
+    // }
 
-    async megaMenu(){
+    async megaMenu(productName: string){
         await this.page.locator("'Mega Menu'").hover(); //locator type is linked text.
-        await this.page.locator("'HTC'").click();
+        //await this.page.locator("'HTC'").click();
+        await this.page.locator(`'${productName}'`).click();
     }
 }

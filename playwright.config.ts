@@ -3,8 +3,12 @@ import type { PlaywrightTestConfig } from "@playwright/test";
 //import { on } from "events";
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/lambdatest.test.ts"],
+  //testMatch: ["tests/datepicker.test.ts"],
+  testMatch: ["pomTest/addToCart.test.ts"],
+  workers: 1,
+  timeout: 120000,
   use: {
+    baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
     headless: false,
     screenshot: "only-on-failure",
     video: "retain-on-failure",

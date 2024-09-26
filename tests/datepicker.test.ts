@@ -90,11 +90,11 @@ test.only('Select date for the previous month : Pick the date based on some cond
 
 
     //date picker
-    const expectedYear = '2016';
+    const expectedYear = '1991';
     const expectedMonth = 'January';
     const date = '24';
 
-    const expectedDate = "01/24/2016";
+    const expectedDate = "01/24/1991";
 
     await page.click('#datepicker'); //Open Calendar
 
@@ -109,7 +109,10 @@ test.only('Select date for the previous month : Pick the date based on some cond
         }
 
         //Clicks next until it finds desired month
-        await page.locator("//span[text()='Prev']").click();
+        //await page.locator("//span[text()='Prev']").click({force: true});
+        //await page.locator("//span[text()='Prev']").click({timeout: 60000});
+        await page.locator("//span[text()='Prev']").click({timeout: 120000});
+        await page.waitForTimeout(100); // Adjust the timeout based on performance
     }
 
 

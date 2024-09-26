@@ -28,10 +28,21 @@ export default class RegistrationPage {
     }
 
     async clickOnTermsAndConitionCheckbox(){
-        await this.page.locator("input[name='agree']").click(); 
+        //await this.page.locator("input[name='agree']").click();
+        await this.page.locator("//div[contains(@class, 'custom-checkbox')]").click();
     }
 
-    async clickOnContinueToRegister(){
-        await this.page.locator("input[value='Continue']").click();
-    }
+    async clickOnContinueToRegister() {
+        // We use Promise.all to ensure two actions happen simultaneously:
+        // 1. We wait for the page navigation to complete after clicking the button (i.e., when there are no network requests left).
+        // 2. We click the "Continue" button, which has a value attribute of 'Continue'.
+    
+        await Promise.all([
+            // Waits for the page to finish navigation before proceeding.
+            this.page.waitForNavigation({ waitUntil: "networkidle" }),
+    
+            // Clicks the "Continue" button to proceed with registration.
+            this.page.locator("input[value='Continue']").click()
+        ]);
+    }    
 }
