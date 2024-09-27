@@ -18,8 +18,8 @@ export default class LoginPage {
     }
 
     async login(email: string, password: string) {
-        await this.enterEmail('#input-email');
-        await this.enterPassword('#input-password');
+        await this.enterEmail(email);
+        await this.enterPassword(password);
         await this.clickOnLoginBtn();
     }
 }
