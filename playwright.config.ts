@@ -5,7 +5,8 @@ import type { PlaywrightTestConfig } from "@playwright/test";
 const config: PlaywrightTestConfig = {
   //testMatch: ["tests/datepicker.test.ts"],
   //testMatch: ["pomTest/addToCart.test.ts"],
-  testMatch:["fixture/fixture.test.ts"],
+  //testMatch:["fixture/fixture.test.ts"],
+  testMatch: ["pomTest/addToCartUsingFixture.test.ts"],
   workers: 1,
   timeout: 120000,
   use: {
