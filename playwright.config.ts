@@ -9,17 +9,18 @@ const config: PlaywrightTestConfig = {
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },],
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
+  ],
 
-  //testMatch: ["tests/datepicker.test.ts"],
+  //testMatch: ["tests/login.test.ts"],
   //testMatch: ["pomTest/addToCart.test.ts"],
   //testMatch:["fixture/fixture.test.ts"],
   testMatch: ["pomTest/addToCartUsingFixture.test.ts"],

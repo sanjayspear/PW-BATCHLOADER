@@ -1,5 +1,6 @@
-import { test, expect } from '../base/pomFixture';
+import { test } from '../base/pomFixture';
 import * as data from '../test-data/addToCart-TestData.json';
+import { expect } from '@playwright/test';
 
 //This code snippet allows you to tet your application in the firefix browser.
 // test.use({
@@ -7,18 +8,53 @@ import * as data from '../test-data/addToCart-TestData.json';
 // });
 
 test.describe("Page Object test demo", async () => {
+
     test("Register test_01", async ({ page, baseURL, registerPage }) => {
+        // Navigate to the registration page
         await page.goto(`${baseURL}route=account/register`);
+
+        // Enter registration details
         await registerPage.enterFirstName(data.firstname);
         await registerPage.enterLastName(data.lastname);
         await registerPage.enterEmail(data.email);
         await registerPage.enterTelephoneNumber(data.phone_number);
         await registerPage.enterPassword(data.password);
         await registerPage.enterConfirmPassword(data.password);
-        await registerPage.clickOnTermsAndConitionCheckbox();
-        await registerPage.clickOnContinueToRegister();
-    });
 
+        // Click on terms and conditions checkbox
+        await registerPage.clickOnTermsAndConitionCheckbox();
+
+        // Click to continue registration
+        await registerPage.clickOnContinueToRegister();
+
+        // Get the error message locator
+        const errorMessageLocator = await registerPage.getErrorMessageLocator();
+
+        // Check if an error message appears indicating the user is already registered
+        const isErrorVisible = await errorMessageLocator.isVisible({ timeout: 5000 });
+
+        if (isErrorVisible) {
+            // Capture the error message
+            const errorMSG = await errorMessageLocator.textContent();
+
+            // Assert that the error message matches the expected text
+            expect(errorMSG?.trim()).toBe("Warning: E-Mail Address is already registered!");
+
+            console.log("Warning: E-Mail Address is already registered!");
+
+            // If error is found (user already registered), exit the test without registering
+            return;
+        } else {
+            // No error message, proceed with registration
+            console.log('Registration successful, no error message found.');
+
+            const registrtionSuccessfulMSG = await (await registerPage.getSuccessfulLoginMessageLocator()).textContent();
+
+            //Assert the successful registration
+            expect(registrtionSuccessfulMSG?.trim()).toBe("Your Account Has Been Created!");
+        }
+    });
+ 
     test("Login test_02", async ({ page, baseURL, loginPage }) => {
         await page.goto(`${baseURL}route=account/login`);
         await loginPage.enterEmail(data.email);
@@ -27,7 +63,7 @@ test.describe("Page Object test demo", async () => {
         expect(await page.title()).toBe('My Account');
     });
 
-    test.only("Add to Cart test_03", async ({ page, baseURL, loginPage, homePage, addToCartPage }) => {
+    test("Add to Cart test_03", async ({ page, baseURL, loginPage, homePage, addToCartPage }) => {
         //const product: string = "HTC";
         const product: string = data.product;
 
@@ -39,4 +75,6 @@ test.describe("Page Object test demo", async () => {
         expect(isCartVisible).toBeVisible();
         await isCartVisible.click();
     });
+
+    
 });

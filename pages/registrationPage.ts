@@ -1,4 +1,4 @@
-import {Page} from '@playwright/test';
+import {Locator, Page} from '@playwright/test';
 export default class RegistrationPage {
 
     constructor(public page: Page){
@@ -44,5 +44,14 @@ export default class RegistrationPage {
             // Clicks the "Continue" button to proceed with registration.
             this.page.locator("input[value='Continue']").click()
         ]);
-    }    
+    }
+    
+    async getErrorMessageLocator(): Promise<Locator> {
+        return this.page.locator("//div[@class='alert alert-danger alert-dismissible']");
+    }
+
+    async getSuccessfulLoginMessageLocator(): Promise<Locator> {
+        return this.page.locator("//h1[@class='page-title my-3']");
+    }
+    
 }

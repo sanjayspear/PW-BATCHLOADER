@@ -25,4 +25,8 @@ test("Login test Demo", async () => {
    const newPage = await newContext.newPage();
    await newPage.goto("https://ecommerce-playground.lambdatest.io/");
    await page.waitForTimeout(1000);
+
+   await page.close();
+   await context.close();
+   await browser.close();
 })
