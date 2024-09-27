@@ -1,6 +1,11 @@
 import { test, expect } from '../base/pomFixture';
 import * as data from '../test-data/addToCart-TestData.json';
 
+//This code snippet allows you to tet your application in the firefix browser.
+// test.use({
+//     browserName: 'firefox'
+// });
+
 test.describe("Page Object test demo", async () => {
     test("Register test_01", async ({ page, baseURL, registerPage }) => {
         await page.goto(`${baseURL}route=account/register`);

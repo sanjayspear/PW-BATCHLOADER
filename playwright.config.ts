@@ -1,13 +1,29 @@
 
-import type { PlaywrightTestConfig } from "@playwright/test";
+import { PlaywrightTestConfig, devices } from "@playwright/test";
 //import { on } from "events";
 
 const config: PlaywrightTestConfig = {
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
+
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
+
+    {
+      name: 'webkit',
+      use: { ...devices['Desktop Safari'] },
+    },],
+
   //testMatch: ["tests/datepicker.test.ts"],
   //testMatch: ["pomTest/addToCart.test.ts"],
   //testMatch:["fixture/fixture.test.ts"],
   testMatch: ["pomTest/addToCartUsingFixture.test.ts"],
-  workers: 1,
+  workers: 3,
   timeout: 120000,
   use: {
     baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
