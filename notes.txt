@@ -1,0 +1,6 @@
+============================List of websites to practice automation===============1. 
+https://letcode.in/
+2. https://ecommerce-playground.lambdatest.io/index.php?
+3. https://rahulshettyacademy.com/seleniumPractise/#/
+4. https://rahulshettyacademy.com/AutomationPractice/
+5. https://rahulshettyacademy.com/angularpractice/
