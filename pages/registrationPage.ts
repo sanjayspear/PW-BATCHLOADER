@@ -1,6 +1,11 @@
 import {Locator, Page} from '@playwright/test';
 export default class RegistrationPage {
 
+    /**
+     * @param page It initializes class properties when an instance of the class is created. 
+     * In this case, it initializes the page property to allow the RegistrationPage class to 
+     * interact with Playwright's Page object.
+     */
     constructor(public page: Page){
         
     }

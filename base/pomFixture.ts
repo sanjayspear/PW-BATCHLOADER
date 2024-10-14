@@ -4,7 +4,7 @@ import LoginPage from "../pages/loginPage";
 import HomePage from "../pages/homePage";
 import AddToCart from "../pages/addProductToCart";
 
-type pages = {
+type pageObjects = {
     registerPage: RegisterPage,
     loginPage: LoginPage,
     homePage: HomePage,
@@ -12,7 +12,7 @@ type pages = {
 }
 
 //Creating all our page objects within the fixture
-const testPages = baseTest.extend<pages>({
+const testPages = baseTest.extend<pageObjects>({
     registerPage: async ({ page }, use) => {
         await use(new RegisterPage(page))
     },
@@ -24,9 +24,9 @@ const testPages = baseTest.extend<pages>({
     },
     addToCartPage: async ({ page }, use) => {
         await use(new AddToCart(page))
-    },
-})
+    }
+});
 
 export const test = testPages;
 export const expect = testPages.expect;
-export const describe = testPages.describe;   
+export const describe = testPages.describe;

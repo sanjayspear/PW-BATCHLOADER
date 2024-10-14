@@ -1,13 +1,8 @@
-import { test } from '../base/pomFixture';
+import { test, expect, describe } from '../base/pomFixture';
 import * as data from '../test-data/addToCart-TestData.json';
-import { expect } from '@playwright/test';
 
-//This code snippet allows you to tet your application in the firefix browser.
-// test.use({
-//     browserName: 'firefox'
-// });
 
-test.describe("Page Object test demo", async () => {
+describe("Page Object test demo", async () => {
 
     test("Register test_01", async ({ page, baseURL, registerPage }) => {
         // Navigate to the registration page

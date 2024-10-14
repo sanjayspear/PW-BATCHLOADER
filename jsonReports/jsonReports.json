@@ -71,7 +71,7 @@
           "title": "Page Object test demo",
           "file": "pomTest/addToCartUsingFixture.test.ts",
           "line": 10,
-          "column": 6,
+          "column": 9,
           "specs": [
             {
               "title": "Register test_01",
@@ -88,7 +88,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6392,
+                      "duration": 7288,
                       "errors": [],
                       "stdout": [
                         {
@@ -97,7 +97,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-09-27T15:29:00.454Z",
+                      "startTime": "2024-10-14T08:04:29.747Z",
                       "attachments": []
                     }
                   ],
@@ -124,12 +124,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 4966,
+                      "duration": 5459,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-09-27T15:29:07.303Z",
+                      "startTime": "2024-10-14T08:04:37.558Z",
                       "attachments": []
                     }
                   ],
@@ -156,12 +156,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 10338,
+                      "duration": 12102,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-09-27T15:29:12.276Z",
+                      "startTime": "2024-10-14T08:04:43.032Z",
                       "attachments": []
                     }
                   ],
@@ -180,8 +180,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-27T15:28:59.246Z",
-    "duration": 23707.3,
+    "startTime": "2024-10-14T08:04:28.665Z",
+    "duration": 27362.117000000002,
     "expected": 3,
     "skipped": 0,
     "unexpected": 0,
