@@ -1,4 +1,5 @@
 import { test, expect, describe } from '../base/pomFixture';
+import RegistrationPage from '../pages/registrationPage';
 import * as data from '../test-data/addToCart-TestData.json';
 
 

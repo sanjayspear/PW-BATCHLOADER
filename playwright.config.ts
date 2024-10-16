@@ -20,7 +20,7 @@ const config: PlaywrightTestConfig = {
     // },
   ],
 
-  //testMatch: ["tests/login.test.ts"],
+  //testMatch: ["tests/color.test.ts"],
   //testMatch: ["pomTest/addToCart.test.ts"],
   //testMatch:["fixture/fixture.test.ts"],
   testMatch: ["pomTest/addToCartUsingFixture.test.ts"],

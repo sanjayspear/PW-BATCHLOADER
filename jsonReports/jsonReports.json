@@ -70,7 +70,7 @@
         {
           "title": "Page Object test demo",
           "file": "pomTest/addToCartUsingFixture.test.ts",
-          "line": 10,
+          "line": 6,
           "column": 9,
           "specs": [
             {
@@ -88,7 +88,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 7288,
+                      "duration": 6144,
                       "errors": [],
                       "stdout": [
                         {
@@ -97,7 +97,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-10-14T08:04:29.747Z",
+                      "startTime": "2024-10-16T10:19:45.546Z",
                       "attachments": []
                     }
                   ],
@@ -106,7 +106,7 @@
               ],
               "id": "302f6666e78fdcbe3d51-edaacd45e80218f2931e",
               "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 12,
+              "line": 8,
               "column": 9
             },
             {
@@ -124,12 +124,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 5459,
+                      "duration": 4809,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-10-14T08:04:37.558Z",
+                      "startTime": "2024-10-16T10:19:52.100Z",
                       "attachments": []
                     }
                   ],
@@ -138,7 +138,7 @@
               ],
               "id": "302f6666e78fdcbe3d51-d4e40dbea2dd117b6d4a",
               "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 58,
+              "line": 54,
               "column": 9
             },
             {
@@ -156,12 +156,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 12102,
+                      "duration": 11034,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-10-14T08:04:43.032Z",
+                      "startTime": "2024-10-16T10:19:56.917Z",
                       "attachments": []
                     }
                   ],
@@ -170,7 +170,7 @@
               ],
               "id": "302f6666e78fdcbe3d51-d62cca601ea9fa8224ce",
               "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 66,
+              "line": 62,
               "column": 9
             }
           ]
@@ -180,8 +180,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-14T08:04:28.665Z",
-    "duration": 27362.117000000002,
+    "startTime": "2024-10-16T10:19:44.656Z",
+    "duration": 23733.303999999996,
     "expected": 3,
     "skipped": 0,
     "unexpected": 0,
