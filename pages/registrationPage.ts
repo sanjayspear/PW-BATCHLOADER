@@ -59,4 +59,8 @@ export default class RegistrationPage {
         return this.page.locator("//h1[@class='page-title my-3']");
     }
     
+    async logoColorCheck(): Promise<Locator>{
+        const element = this.page.locator("(//*[contains(@class, 'entry-design') and contains(@class, 'design-image') and contains(@class, 'flex-grow-0') and contains(@class, 'flex-shrink-0')])[1]");
+        return element;
+    }
 }
