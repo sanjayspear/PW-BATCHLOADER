@@ -1,3 +1,4 @@
+import { Locator, Page } from '@playwright/test';
 import { test, expect, describe } from '../base/pomFixture';
 import RegistrationPage from '../pages/registrationPage';
 import * as data from '../test-data/addToCart-TestData.json';
@@ -72,5 +73,27 @@ describe("Page Object test demo", async () => {
         await isCartVisible.click();
     });
 
-    
+    test("Validate logo color: Home Page", async ({page, baseURL, homePage}) => {
+        await page.goto(`${baseURL}`);
+        const element: Locator = await homePage.logoColorCheck();
+        expect(element).toHaveCSS('color', 'rgb(38, 38, 38)');
+    });
+
+    test("Validate logo color: Login Page", async ({page, baseURL, loginPage}) => {
+        await page.goto(`${baseURL}route=account/login`);
+        const element: Locator = await loginPage.logoColorCheck();
+        expect(element).toHaveCSS('color', 'rgb(38, 38, 38)');
+    });
+
+    test("Validate logo color: Register Page", async ({page, baseURL, registerPage}) => {
+        await page.goto(`${baseURL}route=account/register`);
+        const element: Locator = await registerPage.logoColorCheck();
+        expect(element).toHaveCSS('color', 'rgb(38, 38, 38)');
+    });
+
+    test("Validate logo color: Add To Cart Page", async ({page, baseURL, registerPage}) => {
+        await page.goto(`${baseURL}route=account/login`);
+        const element: Locator = await registerPage.logoColorCheck();
+        expect(element).toHaveCSS('color', 'rgb(38, 38, 38)');
+    });
 });
