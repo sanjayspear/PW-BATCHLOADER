@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -48,269 +48,197 @@
         "testDir": "C:/Users/Administrator/OneDrive - Dhruv Compusoft Consultancy Pvt Ltd/Documents/PW-BatchLoader",
         "testIgnore": [],
         "testMatch": [
-          "pomTest/addToCartUsingFixture.test.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 120000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.46.1",
+    "version": "1.49.1",
     "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "pomTest\\addToCartUsingFixture.test.ts",
-      "file": "pomTest/addToCartUsingFixture.test.ts",
+      "title": "tests\\basicInteractions.test.ts",
+      "file": "tests/basicInteractions.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Page Object test demo",
-          "file": "pomTest/addToCartUsingFixture.test.ts",
-          "line": 7,
-          "column": 9,
-          "specs": [
+          "title": "@smoke Test Input Field",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
             {
-              "title": "Register test_01",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 7093,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 12451,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Warning: E-Mail Address is already registered!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-20T13:33:04.024Z",
-                      "attachments": []
+                      "text": "Enter Your Name\n"
+                    },
+                    {
+                      "text": "Before entering the data: \n"
+                    },
+                    {
+                      "text": "After entering the data: Sanjay\n"
+                    },
+                    {
+                      "text": "Is Checkbox Checked true\n"
                     }
                   ],
-                  "status": "expected"
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-03T16:43:03.150Z",
+                  "attachments": []
                 }
               ],
-              "id": "302f6666e78fdcbe3d51-edaacd45e80218f2931e",
-              "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 9,
-              "column": 9
-            },
-            {
-              "title": "Login test_02",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 23694,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-20T13:33:17.127Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "302f6666e78fdcbe3d51-d4e40dbea2dd117b6d4a",
-              "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 55,
-              "column": 9
-            },
-            {
-              "title": "Add to Cart test_03",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 39600,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-20T13:33:40.833Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "302f6666e78fdcbe3d51-d62cca601ea9fa8224ce",
-              "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 63,
-              "column": 9
-            },
-            {
-              "title": "Validate logo color: Home Page",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 13529,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-20T13:34:20.446Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "302f6666e78fdcbe3d51-a18a2361daaa7ca66264",
-              "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 76,
-              "column": 9
-            },
-            {
-              "title": "Validate logo color: Login Page",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 5027,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-20T13:34:33.983Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "302f6666e78fdcbe3d51-2d44c41a1556538d4e49",
-              "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 82,
-              "column": 9
-            },
-            {
-              "title": "Validate logo color: Register Page",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 6056,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-20T13:34:39.020Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "302f6666e78fdcbe3d51-2141d92b3882539ca834",
-              "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 88,
-              "column": 9
-            },
-            {
-              "title": "Validate logo color: Add To Cart Page",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 5506,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2024-10-20T13:34:45.085Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "302f6666e78fdcbe3d51-cc1950d281fb1bcc4bc3",
-              "file": "pomTest/addToCartUsingFixture.test.ts",
-              "line": 94,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "e8550347d925177e1da7-53240466c87ca43f485c",
+          "file": "tests/basicInteractions.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests\\color.test.ts",
+      "file": "tests/color.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@smoke Validate element color",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 9823,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-03T16:43:03.445Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "74ae724c4e6170296e06-0f2f82709436a1abd8f8",
+          "file": "tests/color.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "tests\\datepicker.test.ts",
+      "file": "tests/datepicker.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "@smoke Date Picker Test, By passing the date format directly into the date field",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 13192,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-03T16:43:03.851Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "778a1962c2135f108acd-ff9f0ba5f27f1567cbf8",
+          "file": "tests/datepicker.test.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "@smoke Date Picker, Appraoch 1 (Using for loop): Pick the date based on some conditions",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 9077,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-01-03T16:43:18.902Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "778a1962c2135f108acd-3e30d6387ecc7a65d95a",
+          "file": "tests/datepicker.test.ts",
+          "line": 13,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-20T13:33:03.150Z",
-    "duration": 108159.591,
-    "expected": 7,
+    "startTime": "2025-01-03T16:43:01.529Z",
+    "duration": 26772.635000000002,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

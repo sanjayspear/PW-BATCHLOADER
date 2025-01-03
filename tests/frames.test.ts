@@ -1,6 +1,6 @@
 import {expect, test} from '@playwright/test';
 
-test('Interact with Frames', async ({page}) => {
+test('@regression Interact with Frames', async ({page}) => {
     await page.goto("https://letcode.in/frame");
     // Counts no. of frames
     const allFrames = page.frames();

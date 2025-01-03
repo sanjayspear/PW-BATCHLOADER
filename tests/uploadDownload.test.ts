@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
+import { describe } from 'node:test';
 import path from 'path';
 
-//Note: You can get the following code form the Playwright official Document.
+describe('@regression', () => {
+    //Note: You can get the following code form the Playwright official Document.
 
 //Reference: https://playwright.dev/docs/downloads
 test('Download Files', async ({ page }) => {
@@ -44,6 +46,8 @@ test('Upload Multiple File', async ({ page }) => {
     await page.locator('#filesToUpload').setInputFiles([]);
     await expect(page.locator('#fileList li:nth-child(3)')).toHaveText('No Files Selected');
 });
+});
+
 
 
 

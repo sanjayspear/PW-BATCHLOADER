@@ -1,6 +1,6 @@
 import {expect, test} from "@playwright/test"
 
-test("Test Input Field", async ({page}) => {
+test("@smoke Test Input Field", async ({page}) => {
     await page.goto("https://rahulshettyacademy.com/AutomationPractice/");
     const nameField = page.locator("input#name");
     await nameField.scrollIntoViewIfNeeded();

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Validate element color', async ({ page }) => {
+test('@smoke Validate element color', async ({ page }) => {
   // Navigate to the webpage
   await page.goto('https://ecommerce-playground.lambdatest.io/index.php?');
 

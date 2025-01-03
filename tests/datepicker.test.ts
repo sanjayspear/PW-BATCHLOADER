@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 //NOTE: CTRL + J => Brings up your terminal.
 
-test('Date Picker Test, By passing the date format directly into the date field', async ({ page }) => {
+test('@smoke Date Picker Test, By passing the date format directly into the date field', async ({ page }) => {
     //Direct Approach: Enter the desired date directly into the date field.
     await page.goto('https://testautomationpractice.blogspot.com/');
     await page.locator('#datepicker').scrollIntoViewIfNeeded();
@@ -10,7 +10,7 @@ test('Date Picker Test, By passing the date format directly into the date field'
     await page.waitForTimeout(3000);
 });
 
-test('Date Picker, Appraoch 1 (Using for loop): Pick the date based on some conditions', async ({ page }) => {
+test('@smoke Date Picker, Appraoch 1 (Using for loop): Pick the date based on some conditions', async ({ page }) => {
     //Direct Approach: Enter the desired date directly into the date field.
     await page.goto('https://testautomationpractice.blogspot.com/');
     await page.locator('#datepicker').scrollIntoViewIfNeeded();
@@ -49,7 +49,7 @@ test('Date Picker, Appraoch 1 (Using for loop): Pick the date based on some cond
     await page.waitForTimeout(3000);
 });
 
-test('Date Picker, Approach 2 (Without using for loop) : Pick the date based on some conditions', async ({ page }) => {
+test('@sanity Date Picker, Approach 2 (Without using for loop) : Pick the date based on some conditions', async ({ page }) => {
     //Direct Approach: Enter the desired date directly into the date field.
     await page.goto('https://testautomationpractice.blogspot.com/');
     await page.locator('#datepicker').scrollIntoViewIfNeeded();
@@ -83,7 +83,7 @@ test('Date Picker, Approach 2 (Without using for loop) : Pick the date based on 
     await page.waitForTimeout(3000);
 });
 
-test.only('Select date for the previous month : Pick the date based on some conditions', async ({ page }) => {
+test('@sanity Select date for the previous month : Pick the date based on some conditions', async ({ page }) => {
     //Direct Approach: Enter the desired date directly into the date field.
     await page.goto('https://testautomationpractice.blogspot.com/');
     await page.locator('#datepicker').scrollIntoViewIfNeeded();

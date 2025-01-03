@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('@regression test', async ({ page }) => {
   await page.goto('https://ecommerce-playground.lambdatest.io/');
   await page.hover("//a[@data-toggle='dropdown']//span[contains(text(), ' My account')]");
   await page.getByRole('link', { name: 'Login' }).click();

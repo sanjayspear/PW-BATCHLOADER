@@ -1,6 +1,6 @@
 import { chromium, test } from "@playwright/test";
 
-test("Login test Demo", async () => {
+test("@regression Login test Demo", async () => {
    const browser = await chromium.launch({
         headless: false
    });

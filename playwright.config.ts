@@ -23,7 +23,11 @@ const config: PlaywrightTestConfig = {
   //testMatch: ["tests/color.test.ts"],
   //testMatch: ["pomTest/addToCart.test.ts"],
   //testMatch:["fixture/fixture.test.ts"],
-  testMatch: ["pomTest/addToCartUsingFixture.test.ts"],
+  //testMatch: ["tests/*.test.ts"],
+  //grep: process.env.TEST_TAG ? new RegExp(`\\b${process.env.TEST_TAG}\\b`) : undefined,
+  grep: process.env.TEST_TAG ? new RegExp(process.env.TEST_TAG) : undefined,
+
+
   workers: 3,
   timeout: 120000,
   use: {

@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "debug": "npx playwright test --ui"
+    "debug": "npx playwright test --ui",
+    "test:regression": "cross-env TEST_TAG=@regression npx playwright test",
+    "test:sanity": "cross-env TEST_TAG=@sanity npx playwright test",
+    "test:smoke": "cross-env TEST_TAG=@smoke npx playwright test"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +15,8 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.46.1",
-    "@types/node": "^22.5.0"
+    "@types/node": "^22.5.0",
+    "cross-env": "^7.0.3"
   },
   "dependencies": {
     "pw-batchloader": "file:"

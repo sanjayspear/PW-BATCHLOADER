@@ -1,7 +1,9 @@
 import { expect, test, chromium, Page } from "@playwright/test";
 import { promises } from "dns";
+import { describe } from "node:test";
 
-// test.use({
+describe('@regression', () => {
+    // test.use({
 //     viewport: { width: 1100, height: 600 },
 // });
 
@@ -91,7 +93,7 @@ test("APPROACH 02: Handle multiple pages event / new window event / tab event", 
 });
 
 //APPROACH 02: Example 2
-test.only("APPROACH 02: Example 2 Handle multiple pages event / new window event / tab event", async ({ page }) => {
+test("APPROACH 02: Example 2 Handle multiple pages event / new window event / tab event", async ({ page }) => {
     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
     console.log("Parent Window URL: "+page.url());
@@ -118,7 +120,9 @@ test.only("APPROACH 02: Example 2 Handle multiple pages event / new window event
         }
     }
     //You can simply ignore ths red squiggly line
-    const textContent = await chidPage.textContent("//h1")  
-    console.log("Text Content is: "+textContent);
+    //const textContent = await chidPage.textContent("//h1")  
+    //console.log("Text Content is: "+textContent);
+});
+
 });
 

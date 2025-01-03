@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test('Lambdatest Ecom Site Test', async ({page}) => {
+test('@regression Lambdatest Ecom Site Test', async ({page}) => {
     await page.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/login");
     await page.locator('#input-email').fill('test001@test.com');//test001@test.com
     await page.locator('#input-password').fill('1234'); //1234
